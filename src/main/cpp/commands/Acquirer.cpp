@@ -26,7 +26,7 @@ void Acquirer::Execute() {
 
 }
 
-bool Acquirer::IsFinished(){return false;}
+bool Acquirer::IsFinished(){return true;}
 
 void Acquirer::End() {}
 

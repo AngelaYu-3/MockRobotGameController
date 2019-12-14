@@ -14,12 +14,13 @@ OI::OI() {
   driveJoy = new Joystick(0);
   In = new JoystickButton(driveJoy, 1); //pick port numbers
   Out = new JoystickButton(driveJoy, 2);
-  while(true) {
-    In->WhenPressed(new Acquirer(5));
-    Out->WhenPressed(new Acquirer(-5));
+  //while(true) {
+    In->WhenPressed(new Acquirer(1));
+    Out->WhenPressed(new Acquirer(-1));
     In->WhenReleased(new Acquirer(0));
-    Out->WhenReleased(new Acquirer(0));
-  }
+    Out->WhenReleased(new Acquirer(0)); 
+    //fighting with itself, one button pressed other released so still at 0
+  //}
 }
 
 Joystick* OI::getJoy(){ 

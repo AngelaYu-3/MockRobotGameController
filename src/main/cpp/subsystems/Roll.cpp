@@ -9,7 +9,7 @@
 #include "commands/Acquirer.h"
 
 Roll::Roll() : Subsystem("ExampleSubsystem") {
-  RollMotor = new TalonSRX(2); //port number
+  RollMotor = new TalonSRX(5); //port number
 }
 
 void Roll::InitDefaultCommand() {

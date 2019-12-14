@@ -18,8 +18,8 @@ void TankDrive::Initialize() {}
 
 // Called repeatedly when this Command is scheduled to run
 void TankDrive::Execute() {
-  double leftPower = Robot::m_oi->getJoy()->GetRawAxis(3);
-  double rightPower = Robot::m_oi->getJoy()->GetY();
+  double leftPower = Robot::m_oi->getJoy()->GetRawAxis(5);
+  double rightPower = Robot::m_oi->getJoy()->GetRawAxis(1);
   Robot::drive->power(leftPower*0.5, rightPower*0.5);
 
 }

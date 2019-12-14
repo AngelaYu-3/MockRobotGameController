@@ -9,9 +9,10 @@
 #include "commands/TankDrive.h"
 
 DriveTrain::DriveTrain() : Subsystem("ExampleSubsystem") {
-  leftMotor = new TalonSRX(6);
-  rightMotor = new TalonSRX(5);
-  leftMotor->SetInverted(true);
+  leftMotor = new TalonSRX(3);
+  rightMotor = new TalonSRX(2);
+  //leftMotor->SetInverted(true);
+  rightMotor-> SetInverted(true);
 }
 
 void DriveTrain::InitDefaultCommand() {
